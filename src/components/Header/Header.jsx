@@ -9,6 +9,12 @@ const Header = () => {
     const mobile = window.innerWidth <= 768 ? true : false;
     const [menuOpend, setMenuOPened] = React.useState(false);
 
+    const close = () => {
+        if (mobile) {
+            setMenuOPened(false);
+        }
+    }
+
     return (
         <div className='header' id='home'>
             <img src={Logo} alt="" className='logo' />
@@ -20,6 +26,7 @@ const Header = () => {
                 <img src={Bars} alt="" className='bars' />
 
             </div>) : <ul className='header-menu'>
+                <p className='cross-close stroke-text' onClick={close}>X</p>
 
                 <li onClick={() => setMenuOPened(false)}>
                     <Link

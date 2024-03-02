@@ -63,6 +63,16 @@
     cursor: pointer;
 }
 
+.cross-close{
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    /* width: 1rem; */
+    color: red;
+}
+
 @media screen and (max-width: 768px) {
     .programs-header {
         flex-direction: column;
@@ -73,7 +83,10 @@
         margin-top: 2rem;
     }
 
-    .prgoram-categories {
+    .programs-catagories {
         flex-direction: column;
+    }
+    .cross-close{
+        display: block;
     }
 }
