@@ -39,7 +39,7 @@ const mobile = window.innerWidth <= 768? true : false;
                         <span>Your</span>
                     </div>
                     <div>
-                        <span>Ideal body</span>
+                        <span>Ideal b☮dy</span>
                     </div>
                     <div>
                         <span>

@@ -23,7 +23,7 @@ const Plans = () => {
                     <div className="plan" key={i}>
                         {plan.icon}
                         <span>{plan.name}</span>
-                        <span>${plan.price}/month</span>
+                        <span>${plan.price}<br></br> /month</span>
 
                         <div className="features">
                             {plan.features.map((feature, i) => (
